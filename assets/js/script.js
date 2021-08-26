@@ -30,8 +30,8 @@ document.getElementById('flip').addEventListener('click', function() {
     let percentTails = 0
 
     if (total > 0) {
-        percentHeads = Math.round(headFlips / total) * 100
-        percentTails = Math.round(tailFlips / total) * 100
+        percentHeads = Math.round((headFlips / total) * 100)
+        percentTails = Math.round((tailFlips / total) * 100)
     }
         document.getElementById("heads").textContent = headFlips
         document.getElementById("tails").textContent = tailFlips
